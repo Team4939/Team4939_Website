@@ -1,0 +1,154 @@
+                                                                     
+                                                                     
+                                                                     
+                                             
+
+
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>AM_Themes | Theme: Aqua</title>
+		
+		<link  href="../../../../../../fonts.googleapis.com/css@family=Kreon_3A300,400,700" rel="stylesheet" type="text/css" >
+        
+        <link href="selector/styles.css" rel="stylesheet" media="all" />
+        
+		<!--[if IE]>
+			
+			<style type="text/css">
+			
+				li.purchase a {
+					padding-top: 5px;
+					background-position: 0px -4px;
+				}
+				
+				li.remove_frame a {
+					padding-top: 5px;
+					background-position: 0px -3px;
+				}
+				
+				#theme_select {
+					padding: 8px 8px;
+				}
+				
+				#theme_list {
+					margin-top: 2px;
+				}
+			
+			</style>
+			
+		<![endif]--> 
+		
+		<style type="text/css">
+		
+				
+		</style>
+	        
+        <script type="text/javascript" src="selector/jquery-1.4.2.min.js"></script>
+        
+        <script type="text/javascript">
+        
+        var theme_list_open = false;
+        
+        $(document).ready(function () {
+        
+        	function fixHeight () {
+        	
+        	var headerHeight = $("#switcher").height();
+        	        	
+        	$("#iframe").attr("height", (($(window).height() - 10) - headerHeight) + 'px');
+        	
+        	}
+        	
+        	$(window).resize(function () {
+               	
+        		fixHeight();
+        	
+        	}).resize();
+        	
+        	$("#theme_select").click( function () {
+        	
+        		if (theme_list_open == true) {
+        	
+        		$(".center ul li ul").hide();
+        		
+        		theme_list_open = false;
+        		
+        		} else {
+        		
+        		$(".center ul li ul").show();         		
+        		
+        		theme_list_open = true;
+        		
+        		}
+        		
+        		return false;
+        	
+        	});
+
+        	
+        	$("#theme_list ul li a").click(function () {
+        	
+        	var theme_data = $(this).attr("rel").split(",");
+        	        	
+        	$("li.purchase a").attr("href", theme_data[1]);
+        	$("li.remove_frame a").attr("href", theme_data[0]);
+        	$("#iframe").attr("src", theme_data[0]);
+        	
+        	$("#theme_list a#theme_select").text($(this).text());
+        	
+        	$(".center ul li ul").hide();
+        	
+        	theme_list_open = false;
+        	
+        	return false;
+        	
+        	});
+        
+        });
+        
+        </script>
+         
+</head>
+
+<body>
+
+	<div id="switcher">
+	
+		<div class="center">
+		
+		<ul>
+		
+		<li><img src="selector/logo.png" alt="" height="58" /></li>
+		
+		<li id="theme_list"><a id="theme_select" href="#" onclick="document.getElementById('overlay').style.display = 'block';">Aqua</a>
+		
+			<ul>
+<li><a href="#" rel="http://labs.am-themes.com/Email_Builder/?theme=hohoho,http://themeforest.net/item/-hohoho-holiday-business-email-html-with-builder/6325431?ref=am_themes">HoHoHo <span class="product-type">Email Responsive</span><span class="product-preview"><img src="../../../../../../2.s3.envato.com/files/75039113/Screenshots/00_Previe.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/Email_Builder/?theme=xmastime,http://themeforest.net/item/xmastime-holiday-business-email-template-html/6309170?ref=am_themes">XmasTime <span class="product-type">Email Responsive</span><span class="product-preview"><img src="../../../../../../1.s3.envato.com/files/74827998/Screenshots/00_banner.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/Email_Builder/?theme=bizat,http://themeforest.net/item/bizat-corporate-business-html-email-with-builder/6265322?ref=am_themes">Bizat <span class="product-type">Email Responsive</span><span class="product-preview"><img src="../../../../../../2.s3.envato.com/files/74378232/Screenshots/00_bizat.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/3Angle_HTML/index.html,http://themeforest.net/item/3angle-agency-creative-html-template/6175170?ref=am_themes">3Angle <span class="product-type">HTML 5 Responsive</span><span class="product-preview"><img src="../../../../../../1.s3.envato.com/files/73343659/Screenshots/00_preview%20HTML.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/Dash_WP/index.php,http://themeforest.net/item/dash-resume-vcard-blog-personal-template/6023407?ref=am_themes">Dash <span class="product-type">Wordpress</span><span class="product-preview"><img src="../../../../../../1.s3.envato.com/files/71729017/Screenshots/00_banner.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/Ticketrama_WP/index.php,http://themeforest.net/item/-ticketrama-helpdesk-wiki-ticket-support-wp/5768324?ref=am_themes">Ticketrama <span class="product-type">Wordpress</span><span class="product-preview"><img src="../../../../../../1.s3.envato.com/files/68882343/Screenshots/00_previewimage-1.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/Bubble/index.php,http://themeforest.net/item/bubble-modern-email-artistic-html-template/5727809?ref=am_themes">Bubble <span class="product-type">Email Responsive</span><span class="product-preview"><img src="../../../../../../1.s3.envato.com/files/68229671/Screenshots/00_preview.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/Shadow/index.php,http://themeforest.net/item/shadow-flat-corporate-email-template/5673153?ref=am_themes">Shadow <span class="product-type">Email Responsive</span><span class="product-preview"><img src="../../../../../../3.s3.envato.com/files/67545065/screenshots/00_banner.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/Ticketrama_HTML/index.html,http://themeforest.net/item/-ticketrama-helpdesk-wiki-ticket-support-html/5547487?ref=am_themes">Ticketrama <span class="product-type">HTML 5 Admin</span><span class="product-preview"><img src="../../../../../../3.s3.envato.com/files/66094244/PNG/00_previewimage.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/Dash_HTML/index-blur.html,http://themeforest.net/item/dash-modern-resume-vcard-html-template/5501353?ref=am_themes">Dash <span class="product-type">HTML 5 Responsive</span><span class="product-preview"><img src="../../../../../../3.s3.envato.com/files/65471788/Screenshots/00_preview.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/Pigeon/index.php,http://themeforest.net/item/pigeon-business-email-template/5410732?ref=am_themes">Pigeon <span class="product-type">Email Responsive</span><span class="product-preview"><img src="../../../../../../1.s3.envato.com/files/64423339/Screenshots/00_Pigeon.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/Marphie/index.php,http://themeforest.net/item/marphie-business-responsive-email-template/5318437?ref=am_themes">Marphie <span class="product-type">Email Responsive</span><span class="product-preview"><img src="../../../../../../1.s3.envato.com/files/63380601/Screenshots/01.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/Aqua/index.php,http://themeforest.net/item/aqua-corporate-flat-email-template/5284846?ref=am_themes">Aqua <span class="product-type">Email Responsive</span><span class="product-preview"><img src="../../../../../../0.s3.envato.com/files/62896293/Screenshots/00_AQUA_Presentation_Rectangle.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/Flattr/index.php,http://themeforest.net/item/flattr-flat-corporation-email-template/5037805?ref=am_themes">Flattr <span class="product-type">Email Responsive</span><span class="product-preview"><img src="../../../../../../2.s3.envato.com/files/60021893/Screenshots/00_Flattr.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/Flattie/index.php,http://themeforest.net/item/flattie-flat-responsive-email-template/4973754?ref=am_themes">Flattie <span class="product-type">Email Responsive</span><span class="product-preview"><img src="../../../../../../0.s3.envato.com/files/59293078/Screenshots/00_flattie.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/Fold/index.php,http://themeforest.net/item/fold-responsive-email-template/4797515?ref=am_themes">Fold <span class="product-type">Email Responsive</span><span class="product-preview"><img src="../../../../../../3.s3.envato.com/files/57436911/01_banner.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/GreatSummer/LandingPage,http://themeforest.net/item/greatsummer-responsive-clean-email-template/4664965?ref=am_themes">GreatSummer <span class="product-type">Email Responsive</span><span class="product-preview"><img src="../../../../../../0.s3.envato.com/files/55595588/01_preview.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/wd_email/index.php,http://themeforest.net/item/wd-email-clearn-responsive-email-template/4495512?ref=am_themes">WD <span class="product-type">Email Responsive</span><span class="product-preview"><img src="../../../../../../3.s3.envato.com/files/53628906/01_preview.__large_preview.png" /></span></a></li><li><a href="#" rel="http://labs.am-themes.com/barsoom_html/PHP/home_minimal_revolution_wide.php,http://themeforest.net/item/barsoom-html-multiple-purpose-template/4312211?ref=am_themes">Barsoom <span class="product-type">HTML 5 Responsive</span><span class="product-preview"><img src="../../../../../../3.s3.envato.com/files/51489708/00-Barsoom_Preview.__large_preview.png" /></span></a></li><li><a href="#" rel="http://www.transfersplay.com/Vorrow_demo/,http://themeforest.net/item/vorrow-one-page-responsive-html-template/3398645?ref=am_themes">Vorrow <span class="product-type">HTML 5 Responsive</span><span class="product-preview"><img src="../../../../../../3.s3.envato.com/files/41707953/01_vorrow_html_preview.__large_preview.png" /></span></a></li><li><a href="#" rel="http://themeforest.net/theme_previews/3209022-vorrow-one-page-psd-template,http://themeforest.net/item/vorrow-one-page-psd-template/3209022?ref=am_themes">Vorrow <span class="product-type">PSD</span><span class="product-preview"><img src="../../../../../../0.s3.envato.com/files/41811521/01_preview_PSD.__large_preview.png" /></span></a></li></ul>
+		
+		</li>	
+		
+		
+		<li class="remove_frame" rel="http://labs.am-themes.com/Aqua/index.php"><a href="../../../../../Aqua/index.php"></a></li>		
+		
+		<li class="purchase" rel="http://themeforest.net/item/aqua-corporate-flat-email-template/5284846"><a href="../../../../../../themeforest.net/item/aqua-corporate-flat-email-template/5284846"></a></li>		
+		
+		</ul>
+
+                </div>
+	
+	</div>
+	
+    <span id="overlay"></span>
+
+    <iframe id="iframe" src="../../../../../Aqua/index.php" frameborder="0" width="100%"></ iframe>
+
+    
+</body>
+
+</html>
+
