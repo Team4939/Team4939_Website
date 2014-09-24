@@ -1,6 +1,5 @@
-PANGAEA WORKING
+Team4939_Website
 ===============
 
-This is a backup for the code used on Pangaea
+This is a backup for team4939.ca
 
-DO NOT MAKE ANY CHANGES UNLESS THEY WORK AND THEY ARE FINAL!!!
